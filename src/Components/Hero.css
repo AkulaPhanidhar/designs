@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Rubik:wght@300;400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.hero {
+    padding: 30px 100px;
+}
+
+.heroContainer {
+    width: 100%;
+    height: 70vh;
+    background: #13151d;
+    border-radius: 10px;
+}

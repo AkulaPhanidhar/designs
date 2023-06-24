@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Rubik:wght@300;400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+
+.logo {
+    color: #E8EAF0;
+    font-size: xx-large;
+    font-weight: 600;
+    cursor: pointer;
+    background: transparent;
+}
+
+.navLinksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.navLinks {
+    position: relative;
+    color: #E8EAF0;
+    font-size: small;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-right: 50px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.navLinks::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #E8EAF0;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.navLinks:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.getStartedButton {
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 1px;
+    color: #E8EAF0;
+    font-size: small;
+    font-weight: 500;
+    border: 1px solid #E8EAF0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.getStartedButton:hover {
+    background: #E8EAF0;
+    color: #0E1014;
+}
