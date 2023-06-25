@@ -45,7 +45,7 @@
     margin-right: 50px;
     cursor: pointer;
     background: transparent;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s linear;
 }
 
 .navLinks:hover {
@@ -63,7 +63,7 @@
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
-    transition: transform 0.3s;
+    transition: transform 0.3s linear;
 }
 
 .navLinks:hover::after {
@@ -87,7 +87,7 @@
     border-radius: 5px;
     cursor: pointer;
     background: transparent;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s linear;
 }
 
 .getStartedButton:hover {

@@ -7,14 +7,22 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
-        <Link to={"/"}>
-          <p className="logo">Sniffy</p>
+        <Link to={"/"} className="logo">
+          Sniffy
         </Link>
         <div className="navLinksContainer">
-          <p className="navLinks">Home</p>
-          <p className="navLinks">About</p>
-          <p className="navLinks">Services</p>
-          <p className="navLinks">Contact</p>
+          <Link to={"/"} className="navLinks">
+            Home
+          </Link>
+          <Link to={"/"} className="navLinks">
+            About
+          </Link>
+          <Link to={"/"} className="navLinks">
+            Services
+          </Link>
+          <Link to={"/"} className="navLinks">
+            Contact
+          </Link>
           <Link to={"/login"}>
             <button className="getStartedButton">
               Get Started{" "}
