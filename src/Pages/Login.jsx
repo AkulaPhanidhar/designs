@@ -12,7 +12,39 @@ const Login = () => {
             <HiArrowNarrowLeft className="arrow" size={"25px"} />
           </button>
         </Link>
-        <div className="loginContainer"></div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div className="loginContainer">
+          <p className="loginText">Login</p>
+          <div className="inputContainer">
+            <input
+              className="loginInput"
+              type="mail"
+              placeholder="Mail ID"
+              required
+            />
+            <input
+              className="loginInput"
+              type="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div className="buttonContainer">
+            <button onClick={""} className="loginButton">
+              Login
+            </button>
+            <p className="account">
+              Don't have an account ?{" "}
+              <Link to={"/signup"} className="link">
+                Register
+              </Link>
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );

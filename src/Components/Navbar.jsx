@@ -23,7 +23,10 @@ const Navbar = () => {
           <Link to={"/"} className="navLinks">
             Contact
           </Link>
-          <Link to={"/login"}>
+          <Link
+            to={"/login"}
+            style={{ background: "transparent", borderRadius: "5px" }}
+          >
             <button className="getStartedButton">
               Get Started{" "}
               <HiArrowNarrowRight
