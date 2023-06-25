@@ -45,6 +45,11 @@
     margin-right: 50px;
     cursor: pointer;
     background: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.navLinks:hover {
+    transform: translateY(-5px);
 }
 
 .navLinks::after {
@@ -88,4 +93,5 @@
 .getStartedButton:hover {
     background: #E8EAF0;
     color: #0E1014;
+    transform: translateY(-5px);
 }
