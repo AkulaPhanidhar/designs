@@ -24,7 +24,7 @@
 .logo {
     color: #E8EAF0;
     font-size: xx-large;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     background: transparent;
 }
@@ -33,6 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 50px;
     background: transparent;
 }
 
@@ -42,7 +43,6 @@
     font-size: small;
     font-weight: 500;
     letter-spacing: 1px;
-    margin-right: 50px;
     cursor: pointer;
     background: transparent;
     transition: 0.3s linear;
@@ -50,6 +50,7 @@
 
 .navLinks:hover {
     transform: translateY(-5px);
+    color: aqua;
 }
 
 .navLinks::after {
@@ -69,6 +70,7 @@
 .navLinks:hover::after {
     transform-origin: left;
     transform: scaleX(1);
+    background: aqua;
 }
 
 .getStartedButton {
@@ -94,4 +96,25 @@
     background: #E8EAF0;
     color: #0E1014;
     transform: translateY(-5px);
+}
+
+#active {
+    position: relative;
+    color: aqua;
+    font-size: small;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: transparent;
+}
+
+#active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: aqua;
+    border-radius: 5px;
 }

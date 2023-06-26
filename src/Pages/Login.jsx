@@ -23,15 +23,20 @@ const Login = () => {
             <input
               className="loginInput"
               type="mail"
-              placeholder="Mail ID"
+              placeholder="Phone or Mail ID"
               required
             />
-            <input
-              className="loginInput"
-              type="password"
-              placeholder="Password"
-              required
-            />
+            <div className="passwordContainer">
+              <input
+                className="loginInput"
+                type="password"
+                placeholder="Password"
+                required
+              />
+              <Link to={"/forgot"} className="account" id="account">
+                Forgot Password
+              </Link>
+            </div>
           </div>
           <div className="buttonContainer">
             <button onClick={""} className="loginButton">
@@ -40,7 +45,7 @@ const Login = () => {
             <p className="account">
               Don't have an account ?{" "}
               <Link to={"/signup"} className="link">
-                Register
+                Sign UP
               </Link>
             </p>
           </div>
